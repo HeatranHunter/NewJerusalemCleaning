@@ -136,11 +136,12 @@ table {
     border:  rgba(144, 202, 144, 0.733) solid 2px;
     border-radius: 50px;
     box-shadow: 0 0 15px #1414144b;
-    width: 300px;
+    width: 70%;
+    max-width: 300px;
     background-color: #ffffff8f;
 }
 textarea {
-    width: 350px !important;
+    max-width: 350px !important;
     height: 150px;
     font-family: 'Readex Pro', sans-serif;
 }
@@ -211,9 +212,17 @@ footer {
   }
 
 /* Responsive design for smaller screens */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 24px;
+@media (max-width: 720px) {
+    .section {
+        width: 100%; /* Full width for smaller screens */
+        padding: 15px; /* Reduce padding for smaller sections */
+        margin: 10px auto; /* Center align sections */
+        max-width: 300px; /* Limit max-width for consistency */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center align sections horizontally */
     }
 
     nav li {
