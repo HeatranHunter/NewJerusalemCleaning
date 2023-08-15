@@ -153,7 +153,8 @@ textarea {
     border:  rgba(144, 202, 144, 0.733) solid 2px;
     border-radius: 50px;
     box-shadow: 0 0 15px #1414144b;
-    width: 300px;
+    width: 70%;
+    max-width: 300px;
     background-color: #ffffff8f;
 }
 
