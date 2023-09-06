@@ -1,4 +1,11 @@
 <?php
+// Enable error reporting and display errors for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+// Log a message to the error log for debugging purposes
+error_log("Processing form data");
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = $_POST["name"];
   $email = $_POST["email"];
