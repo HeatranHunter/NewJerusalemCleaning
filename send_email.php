@@ -8,8 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $phone = $_POST["phone"];
 
-    $to = "newjerusalemcleaning@gmail.com";
-    $subject = "New Contact Form Submission";
+    $to = "contact@newjerusalemcleaning.com";
+    $subject = "New Form Submission";
     $message = "First Name: $first_name\n"
              . "Last Name: $last_name\n"
              . "Trash Day: $trash_day\n"
@@ -17,8 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
              . "Address: $address\n"
              . "Email: $email\n"
              . "Phone: $phone\n";
-
-    // Send email
     mail($to, $subject, $message);
 
     // Redirect back to the form page
