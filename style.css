@@ -135,7 +135,7 @@ table {
     margin: auto;
 }
 
-.form1 {
+#form1 {
     padding: 20px;
     margin: 15px;
     border:  rgba(144, 202, 144, 0.733) solid 2px;
