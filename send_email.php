@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $message = $_POST["message"];
   
   // Send email
-  $to = "contact@newjerusalemcleaning.com";
+  $to = "newjerusalemcleaning@gmail.com";
   $subject = "New Form Submission";
   $messageBody = "Name: $name\nEmail: $email\nPhone #: $phone\nMessage: $message";
   
